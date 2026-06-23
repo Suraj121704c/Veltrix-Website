@@ -31,7 +31,7 @@ const reasons = [
 
 export default function Reasons() {
   return (
-    <section id="about" className="scroll-mt-24">
+    <section id="why-us" className="scroll-mt-24">
       <div className="mx-auto grid w-full max-w-[1200px] items-start gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-24">
         <div className="flex flex-col items-start gap-6 lg:sticky lg:top-28">
           <Tag>Why Choose Us</Tag>

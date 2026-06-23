@@ -1,11 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 import { images } from "@/utils/images";
 
 const company = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const ourServices = [
@@ -42,12 +43,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               {company.map((item) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
                     className="text-white/60 transition-colors hover:text-primary"
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -60,12 +61,12 @@ export default function Footer() {
             <ul className="mt-4 space-y-3 text-sm">
               {ourServices.map((item) => (
                 <li key={item}>
-                  <a
-                    href="#services"
+                  <Link
+                    href="/#services"
                     className="text-white/60 transition-colors hover:text-primary"
                   >
                     {item}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

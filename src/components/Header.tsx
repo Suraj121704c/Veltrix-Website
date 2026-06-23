@@ -1,35 +1,36 @@
 import Image from "next/image";
+import Link from "next/link";
 import { images } from "@/utils/images";
 
 const navLinks = [
-  { label: "Home", href: "#home" },
-  { label: "Services", href: "#services" },
-  { label: "About Us", href: "#about" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "Services", href: "/#services" },
+  { label: "About Us", href: "/about" },
+  { label: "Contact Us", href: "/#contact" },
 ];
 
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-black/5 bg-white/90 backdrop-blur">
       <div className="mx-auto flex h-20 w-full max-w-[1200px] items-center justify-between gap-6 px-5 sm:px-8">
-        <a href="#home" className="shrink-0">
+        <Link href="/" className="shrink-0">
           <Image
             src={images.logoBlack}
             alt="Veltrix"
             className="h-7 w-auto"
             priority
           />
-        </a>
+        </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">
           {navLinks.map((link) => (
-            <a
+            <Link
               key={link.label}
               href={link.href}
               className="text-sm font-medium text-ink/80 transition-colors hover:text-primary"
             >
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
 
@@ -49,12 +50,12 @@ export default function Header() {
             </span>
           </a>
 
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-dark"
           >
             Book Service Now
-          </a>
+          </Link>
         </div>
       </div>
     </header>
