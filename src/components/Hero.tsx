@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { images } from "@/utils/images";
 import Tag from "./Tag";
 
@@ -18,12 +19,12 @@ export default function Hero() {
             every job is done right.
           </p>
           <div className="mt-2 flex flex-wrap items-center gap-4">
-            <a
-              href="#contact"
+            <Link
+              href="/contact"
               className="rounded-full bg-primary px-7 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-primary-dark"
             >
               Book Service Now
-            </a>
+            </Link>
             <a
               href="#services"
               className="rounded-full border border-black/10 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:border-primary hover:text-primary"

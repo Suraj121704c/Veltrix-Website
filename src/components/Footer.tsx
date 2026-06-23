@@ -6,7 +6,7 @@ const company = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services" },
   { label: "About Us", href: "/about" },
-  { label: "Contact", href: "/#contact" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const ourServices = [
@@ -20,7 +20,7 @@ const ourServices = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="scroll-mt-24 bg-navy text-white/80">
+    <footer className="bg-navy text-white/80">
       <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-8">
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
