@@ -1,15 +1,7 @@
 import Image from "next/image";
-import { images } from "@/utils/images";
+import Link from "next/link";
+import { services } from "@/utils/services";
 import Tag from "./Tag";
-
-const services = [
-  { img: images.service1, alt: "Commercial Cleaning" },
-  { img: images.service2, alt: "Deep Cleaning" },
-  { img: images.service3, alt: "Move In / Move Out Cleaning" },
-  { img: images.service4, alt: "Post Construction Cleaning" },
-  { img: images.service5, alt: "Car Cleaning" },
-  { img: images.service6, alt: "Carpet & Upholstery Cleaning" },
-];
 
 export default function Services() {
   return (
@@ -28,18 +20,19 @@ export default function Services() {
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((service) => (
-            <div
-              key={service.alt}
-              className="group relative aspect-[4/3] overflow-hidden rounded-2xl shadow-sm"
+            <Link
+              key={service.slug}
+              href={`/services/${service.slug}`}
+              className="group relative block aspect-[4/3] overflow-hidden rounded-2xl shadow-sm"
             >
               <Image
-                src={service.img}
-                alt={service.alt}
+                src={service.image}
+                alt={service.title}
                 fill
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
-            </div>
+            </Link>
           ))}
         </div>
       </div>
