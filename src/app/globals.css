@@ -21,3 +21,19 @@ body {
   background: #ffffff;
   color: var(--color-ink);
 }
+
+/* Two-tone hero backdrop: lavender on the left, light blue on the right */
+.hero-gradient {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(
+      75% 90% at 6% 90%,
+      rgba(122, 136, 226, 0.26) 0%,
+      rgba(122, 136, 226, 0) 58%
+    ),
+    radial-gradient(
+      70% 95% at 100% 48%,
+      rgba(88, 170, 232, 0.24) 0%,
+      rgba(88, 170, 232, 0) 58%
+    );
+}

@@ -5,7 +5,7 @@ import Tag from "./Tag";
 
 export default function Hero() {
   return (
-    <section id="home" className="scroll-mt-24">
+    <section id="home" className="hero-gradient scroll-mt-24">
       <div className="mx-auto grid w-full max-w-[1200px] items-center gap-12 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:py-24">
         <div className="flex flex-col items-start gap-6">
           <Tag>Proud Clean</Tag>
