@@ -6,23 +6,23 @@ import Tag from "./Tag";
 const faqs = [
   {
     q: "What cleaning services do you offer?",
-    a: "We offer a full range of services including commercial, deep, move in / move out, post-construction, car, and carpet & upholstery cleaning — tailored to both homes and businesses.",
+    a: "Veltrix provides a comprehensive range of cleaning solutions, including Residential Cleaning, Commercial Cleaning, Deep Cleaning, Move In/Move Out Cleaning, Post Construction Cleaning, Car Cleaning, and Carpet & Upholstery Cleaning. We customize our services to meet the specific needs of homes, offices, retail spaces, and commercial facilities.",
   },
   {
     q: "How do I book a cleaning service?",
-    a: "Simply click 'Book Service Now', give us a call, or send a message. We'll confirm your preferred date, time, and service within minutes.",
+    a: "Booking a service is simple. You can contact us by phone, WhatsApp, email, or through the contact form on our website. Our team will discuss your requirements, provide a quotation, and schedule a convenient time for the service.",
   },
   {
     q: "Do you bring your own cleaning equipment and supplies?",
-    a: "Yes. Our team arrives fully equipped with professional-grade, eco-friendly products and equipment at no extra cost to you.",
+    a: "Yes. Our cleaning professionals arrive fully equipped with the necessary tools, equipment, and high-quality cleaning products. If you have specific product preferences or requirements, we can accommodate them upon request.",
   },
   {
     q: "Are your cleaning staff trained and insured?",
-    a: "Absolutely. Every team member is background-checked, professionally trained, and fully insured for your complete peace of mind.",
+    a: "Absolutely. All Veltrix cleaning professionals are trained, experienced, and committed to delivering high standards of service. We follow strict cleaning procedures and safety protocols to ensure quality and reliability on every project.",
   },
   {
     q: "How much do your cleaning services cost?",
-    a: "Pricing depends on the service type, property size, and frequency. Contact us for a free, transparent, no-obligation quote.",
+    a: "The cost depends on factors such as the type of service, property size, cleaning requirements, and frequency of visits. We provide customized quotations with transparent pricing and no hidden charges. Contact us for a free consultation and quote.",
   },
 ];
 

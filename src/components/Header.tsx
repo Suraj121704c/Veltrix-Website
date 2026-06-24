@@ -1,13 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/utils/images";
+import { services } from "@/utils/services";
 
-const navLinks = [
-  { label: "Home", href: "/" },
-  { label: "Services", href: "/#services" },
-  { label: "About Us", href: "/about" },
-  { label: "Contact Us", href: "/contact" },
-];
+const linkClass =
+  "text-sm font-medium text-ink/80 transition-colors hover:text-primary";
 
 export default function Header() {
   return (
@@ -23,15 +20,40 @@ export default function Header() {
         </Link>
 
         <nav className="hidden items-center gap-9 lg:flex">
-          {navLinks.map((link) => (
+          <Link href="/" className={linkClass}>
+            Home
+          </Link>
+
+          <div className="group relative">
             <Link
-              key={link.label}
-              href={link.href}
-              className="text-sm font-medium text-ink/80 transition-colors hover:text-primary"
+              href="/#services"
+              className={`flex items-center gap-1 ${linkClass} group-hover:text-primary group-focus-within:text-primary`}
             >
-              {link.label}
+              Services
+              <ChevronDownIcon />
             </Link>
-          ))}
+
+            <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+              <div className="w-64 rounded-xl border border-black/5 bg-white p-2 shadow-[0_20px_45px_-20px_rgba(22,29,46,0.45)]">
+                {services.map((service) => (
+                  <Link
+                    key={service.slug}
+                    href={`/services/${service.slug}`}
+                    className="block rounded-lg px-3 py-2 text-sm font-medium text-ink/80 transition-colors hover:bg-primary-soft hover:text-primary"
+                  >
+                    {service.title}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <Link href="/about" className={linkClass}>
+            About Us
+          </Link>
+          <Link href="/contact" className={linkClass}>
+            Contact Us
+          </Link>
         </nav>
 
         <div className="flex items-center gap-4 sm:gap-6">
@@ -59,6 +81,25 @@ export default function Header() {
         </div>
       </div>
     </header>
+  );
+}
+
+function ChevronDownIcon() {
+  return (
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className="transition-transform duration-200 group-hover:rotate-180"
+    >
+      <path d="m6 9 6 6 6-6" />
+    </svg>
   );
 }
 
