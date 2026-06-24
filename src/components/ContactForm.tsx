@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { services } from "@/utils/services";
 
 const inputClass =
   "w-full rounded-lg border border-black/15 bg-white px-4 py-3 text-sm text-ink placeholder:text-body/70 outline-none transition-colors focus:border-primary focus:ring-2 focus:ring-primary/20";
@@ -51,12 +52,21 @@ export default function ContactForm() {
             required
             className={inputClass}
           />
-          <input
-            type="text"
+          <select
             name="service"
-            placeholder="Service Required"
-            className={inputClass}
-          />
+            required
+            defaultValue=""
+            className={`${inputClass} form-select appearance-none pr-10 invalid:text-body/70`}
+          >
+            <option value="" disabled>
+              Service Required
+            </option>
+            {services.map((service) => (
+              <option key={service.slug} value={service.title}>
+                {service.title}
+              </option>
+            ))}
+          </select>
           <textarea
             name="message"
             placeholder="Message"
