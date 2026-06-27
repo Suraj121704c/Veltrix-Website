@@ -30,7 +30,7 @@ export default function Faq() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section className="bg-white">
+    <section>
       <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-8 lg:py-24">
         <div className="flex flex-col items-center gap-4 text-center">
           <Tag>FAQ&apos;s</Tag>

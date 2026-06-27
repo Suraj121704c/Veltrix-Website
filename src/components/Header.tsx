@@ -25,15 +25,15 @@ export default function Header() {
           </Link>
 
           <div className="group relative">
-            <Link
-              href="/#services"
+            <button
+              type="button"
               className={`flex items-center gap-1 ${linkClass} group-hover:text-primary group-focus-within:text-primary`}
             >
               Services
               <ChevronDownIcon />
-            </Link>
+            </button>
 
-            <div className="invisible absolute left-1/2 top-full z-50 -translate-x-1/2 translate-y-1 pt-3 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+            <div className="hidden absolute left-1/2 top-full z-50 -translate-x-1/2 pt-3 group-hover:block group-focus-within:block">
               <div className="w-64 rounded-xl border border-black/5 bg-white p-2 shadow-[0_20px_45px_-20px_rgba(22,29,46,0.45)]">
                 {services.map((service) => (
                   <Link
@@ -58,7 +58,7 @@ export default function Header() {
 
         <div className="flex items-center gap-4 sm:gap-6">
           <a
-            href="tel:+971594286905"
+            href="tel:+971564286905"
             className="hidden items-center gap-2.5 sm:flex"
           >
             <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary-soft text-primary">
@@ -67,7 +67,7 @@ export default function Header() {
             <span className="leading-tight">
               <span className="block text-[11px] text-body">Need help?</span>
               <span className="block text-sm font-semibold text-ink">
-                +971 594286905
+                +971 564286905
               </span>
             </span>
           </a>

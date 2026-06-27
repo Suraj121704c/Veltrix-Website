@@ -5,7 +5,7 @@ import Tag from "./Tag";
 
 export default function Services() {
   return (
-    <section id="services" className="scroll-mt-24 bg-white">
+    <section id="services" className="scroll-mt-24">
       <div className="mx-auto w-full max-w-[1200px] px-5 py-16 sm:px-8 lg:py-24">
         <div className="flex flex-col items-center gap-4 text-center">
           <Tag>Our Services</Tag>
