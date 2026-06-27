@@ -1,21 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 import { images } from "@/utils/images";
+import { services } from "@/utils/services";
 
 const company = [
   { label: "Home", href: "/" },
   { label: "Services", href: "/#services" },
   { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
-];
-
-const ourServices = [
-  "Commercial Cleaning",
-  "Deep Cleaning",
-  "Move In/Move Out Cleaning",
-  "Post Construction Cleaning",
-  "Car Cleaning",
-  "Carpet and Upholstery Cleaning",
 ];
 
 export default function Footer() {
@@ -59,13 +51,13 @@ export default function Footer() {
               Our Services
             </h3>
             <ul className="mt-4 space-y-3 text-sm">
-              {ourServices.map((item) => (
-                <li key={item}>
+              {services.map((service) => (
+                <li key={service.slug}>
                   <Link
-                    href="/#services"
+                    href={`/services/${service.slug}`}
                     className="text-white/60 transition-colors hover:text-primary"
                   >
-                    {item}
+                    {service.title}
                   </Link>
                 </li>
               ))}

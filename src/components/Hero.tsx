@@ -25,12 +25,6 @@ export default function Hero() {
             >
               Book Service Now
             </Link>
-            <a
-              href="#services"
-              className="rounded-full border border-black/10 px-7 py-3 text-sm font-semibold text-ink transition-colors hover:border-primary hover:text-primary"
-            >
-              Our Services
-            </a>
           </div>
         </div>
 

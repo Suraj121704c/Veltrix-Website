@@ -27,7 +27,7 @@ const faqs = [
 ];
 
 export default function Faq() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section className="bg-white">
