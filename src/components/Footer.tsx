@@ -19,7 +19,7 @@ export default function Footer() {
             <Image
               src={images.footerLogo}
               alt="Veltrix"
-              className="h-7 w-auto"
+              className="h-11 w-auto"
             />
             <p className="mt-5 max-w-xs text-sm leading-6 text-white/60">
               We are a team of passionate cleaning experts who take pride in

@@ -14,7 +14,7 @@ export default function Header() {
           <Image
             src={images.logoBlack}
             alt="Veltrix"
-            className="h-7 w-auto"
+            className="h-11 w-auto"
             priority
           />
         </Link>
