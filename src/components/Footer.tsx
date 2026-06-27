@@ -88,10 +88,10 @@ export default function Footer() {
                 Send a Message
               </h3>
               <a
-                href="mailto:contact@veltrix.com"
+                href="mailto:Contact@veltrixcleaning.com"
                 className="mt-3 block text-sm text-white/60 transition-colors hover:text-primary"
               >
-                contact@veltrix.com
+                Contact@veltrixcleaning.com
               </a>
             </div>
           </div>
