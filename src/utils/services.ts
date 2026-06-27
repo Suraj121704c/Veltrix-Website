@@ -46,7 +46,7 @@ export const services: Service[] = [
   {
     slug: "move-in-out-cleaning",
     image: images.service3,
-    title: "Move In/Out Cleaning",
+    title: "Move In/ Move Out Cleaning",
     intro:
       "Moving is stressful enough. Our move in / move out cleaning makes sure your old or new home is completely spotless, helping you get your deposit back or settle in with ease.",
     includesHeading: "Move In / Out Cleaning Services include",

@@ -32,6 +32,11 @@ export default function Services() {
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 380px"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
               />
+              <div className="absolute inset-x-0 bottom-0 border-t border-white/25 bg-white/10 px-5 py-4 backdrop-blur-sm">
+                <h3 className="text-center font-display text-lg font-semibold text-white drop-shadow-sm">
+                  {service.title}
+                </h3>
+              </div>
             </Link>
           ))}
         </div>
