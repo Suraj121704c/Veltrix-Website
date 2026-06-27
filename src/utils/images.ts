@@ -4,6 +4,7 @@ import hero3 from "../assets/images/hero3.png";
 import hero4 from "../assets/images/hero4.png";
 import logoBlack from "../assets/images/logoBlack.png";
 import logoWhite from "../assets/images/logoWhite.png";
+import footerLogo from "../assets/images/footerLogo.svg";
 import cleanerLadyBig from "../assets/images/cleanerLadyBig.png";
 import option1 from "../assets/images/option1.png";
 import option2 from "../assets/images/option2.png";
@@ -27,6 +28,7 @@ export const images = {
     hero4,
     logoBlack,
     logoWhite,
+    footerLogo,
     cleanerLadyBig,
     option1,
     option2,

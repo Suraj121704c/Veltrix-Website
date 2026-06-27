@@ -17,7 +17,7 @@ export default function Footer() {
         <div className="grid gap-10 md:grid-cols-12">
           <div className="md:col-span-4">
             <Image
-              src={images.logoWhite}
+              src={images.footerLogo}
               alt="Veltrix"
               className="h-7 w-auto"
             />
